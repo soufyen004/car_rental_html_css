@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root{
+    --light : #dddddd;
     --primary-color:#666;
     --secondary-color:rgb(31, 31, 31);
+    --box-shadow:1px 2px 15px 5px rgba(0,0,0,0.66);
 }
 
 *{
@@ -40,6 +42,7 @@ nav{
     text-transform: capitalize;
     background-color: var(--secondary-color);
     font: 500 15px/1 'roboto';
+    cursor: pointer;
 }
 
 .hero,.application{
@@ -83,9 +86,86 @@ nav{
     margin: auto;
 }
 .cat{
-    background-color: var(--primary-color);
-    color: #fff;
+    background-color: var(--light);
+    color: var(--secondary-color);
+    text-transform: capitalize;
     margin: 5px;
     padding: 7px;
     border-radius: 12px;
+}
+.cars-show{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.car-show{
+    width: 300px;
+    margin:.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.categories .selected{
+    background-color: var(--secondary-color);
+    color: var(--light);
+}
+.car-show img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.btn{
+    background-color: var(--light);
+    color: var(--secondary-color);
+    padding:.5rem;
+    margin: 1rem .3rem;
+    border: 1px solid var(--primary-color);
+    border-radius: .7rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.features{
+    margin: auto;
+    width: 90%;
+}
+.features .cards{
+    display: flex;
+    margin: 1.5rem auto;
+    justify-content: space-between;
+}
+.features .cards .card{
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid var(--light);
+    padding: 1rem;
+    border-radius: .7rem;
+}
+.features .cards .card .icon{
+    height: 55px;
+    width: 55px;
+    padding: .5rem;
+    border-radius: 50%;
+    background-color: var(--light);
+    font-size: 2rem;
+    text-align: center;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    height: 270px;
+    padding: 1.7rem;
+    border-radius: 1rem;
+    margin: 3rem auto;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--light);
+    box-shadow: var(--box-shadow);
+}
+.info .app{
+    background-color: var(--light);
+    color: var(--secondary-color);
 }
