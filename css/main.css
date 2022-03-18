@@ -20,6 +20,9 @@ nav{
     width: 90%;
     margin: 1rem auto;
 }
+.logo img{
+    max-width: 100px;
+}
 .links{
     display: flex;
     font-weight: 500;
@@ -36,9 +39,9 @@ nav{
 }
 .app{
     color:#fff;
-    border-radius: 13px;
-    margin: auto 0;
-    padding: 5px;
+    border-radius: 1rem;
+    margin: auto .3rem;
+    padding:.3rem .7rem;
     text-transform: capitalize;
     background-color: var(--secondary-color);
     font: 500 15px/1 'roboto';
@@ -57,13 +60,15 @@ nav{
 }
 
 .title{
-    font:700 3.3rem/1 'roboto' ;
+    font:700 3.5rem/1 'roboto' ;
     text-transform: capitalize;
 }
 .subtitle{
     margin: 1rem auto;
-    font:300 .9rem/1 'roboto';
-    padding: 5px;
+    font:100 1.2rem/1 'roboto';
+    padding: .5rem;
+    letter-spacing: 2px;
+    color: var(--primary-color);
 }
 .sub{
     font : 100 1rem/2 'roboto';
@@ -92,6 +97,9 @@ nav{
     margin: 5px;
     padding: 7px;
     border-radius: 12px;
+}
+.cars{
+    margin-top: 3.5rem;
 }
 .cars-show{
     display: flex;
@@ -125,6 +133,7 @@ nav{
     cursor: pointer;
 }
 .features{
+    margin-top: 3.5rem;
     margin: auto;
     width: 90%;
 }
@@ -168,4 +177,47 @@ nav{
 .info .app{
     background-color: var(--light);
     color: var(--secondary-color);
+}
+
+footer{
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+footer .links{
+    display: flex;
+    align-items: flex-end;
+}
+footer .link{
+    list-style: none;
+    margin: .5rem;
+
+}
+footer .link a{
+    text-decoration: none;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+#subscribe{
+    position: relative;
+}
+#subscribe input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--light);
+    color: var(--primary-color);
+}
+.subscribe p{
+    padding: 5px;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+}
+#subscribe button{
+    padding: 4px;
+    position:absolute;
+    right: 3px;
+    top: 1px;
+    border: none;
+    border-left: 1px solid;
 }
