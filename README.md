@@ -3,4 +3,8 @@ car rental website
 
 view website here https://soufyen004.github.io/car_rental/
 
-Important : not responsive for mobile yet!!
+<b>Important : not responsive for mobile yet!!</b>
+
+<img src="./demo.png">
+
+
