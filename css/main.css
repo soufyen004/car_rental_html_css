@@ -151,6 +151,7 @@ nav{
     border: 1px solid var(--light);
     padding: 1rem;
     border-radius: .7rem;
+    margin: .5rem;
 }
 .features .cards .card .icon{
     height: 55px;
@@ -200,6 +201,7 @@ footer .link a{
 }
 #subscribe{
     position: relative;
+    width: 170px;
 }
 #subscribe input{
     padding: 5px;
@@ -220,4 +222,34 @@ footer .link a{
     top: 1px;
     border: none;
     border-left: 1px solid;
+}
+
+@media screen and (max-width: 600px) {
+    .hero{
+        flex-direction: column;
+    }
+    .hero .cover img{
+        width: 500px;
+        margin-left: 10rem;
+    }
+    .features .cards{
+        flex-direction: column;
+    }
+    .info{
+        width: 90%;
+        margin: auto;
+    }
+    .info .title{
+        font-size: 2rem;
+    }
+    .application{
+        flex-direction: column;
+    }
+    .application .cover img{
+        width: 350px;
+    }
+    footer{
+        flex-direction: column;
+        padding: 1rem;
+    }
 }
