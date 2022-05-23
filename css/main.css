@@ -48,6 +48,10 @@ nav{
     cursor: pointer;
 }
 
+.hero{
+    overflow: hidden;
+}
+
 .hero,.application{
     display: flex;
     width: 90%;
